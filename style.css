@@ -1,11 +1,10 @@
-/* Reset default styles */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Set up a full-screen layout */
 body {
     background-color: #f0f4f8;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -14,17 +13,37 @@ body {
     align-items: center;
     height: 100vh;
     flex-direction: column;
+    background-color: #091a1a7e;
 }
 
-/* Heading text */
+.container {
+    width: 100%;
+    max-width: 400px;
+    border: 1px solid #dddddd83;
+    border-radius: 12px;
+    padding: 40px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.5s ease;
+    background-color: #e0dde99d;
+    transition: transform 0.3s ease;
+}
+.container:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.514);
+    transition : all 0.3s ease;
+
+}
+
 h1 {
     font-size: 2rem;
-    color: #333;
+    color: #ffffff;
     margin-bottom: 30px;
     font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.644);
+    text-align: center;
+    
 }
 
-/* Style the form container */
 form {
     background-color: #fff;
     padding: 40px;
@@ -35,57 +54,63 @@ form {
     transition: transform 0.3s ease;
 }
 
-/* Focus effect on form */
 form:hover {
     transform: scale(1.02);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
 }
 
-/* Input styling */
 input {
     width: 100%;
-    padding: 14px;
+    padding: 10px;
     margin-bottom: 20px;
-    border: 2px solid #ddd;
-    border-radius: 8px;
-    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    font-size: 13px;
     color: #333;
     outline: none;
     transition: all 0.3s ease;
+
 }
 
-/* Input focus effect */
 input:focus {
     border-color: #007bff;
     box-shadow: 0 0 8px rgba(0, 123, 255, 0.3);
 }
 
-/* Style for labels (emails, password) */
 label {
     font-size: 14px;
     color: #333;
     margin-bottom: 5px;
     display: block;
+    font-weight: bold;
+    
+}
+label p{
+    font-size: 15px;
+    color: #333;
+    margin-bottom: 5px;
+    display: block;
+    
 }
 
-/* Button styling */
 button {
     width: 100%;
     padding: 14px;
-    background-color: #007bff;
+    background-color: #045ebe;
     border: none;
-    border-radius: 8px;
-    font-size: 16px;
+    border-radius: 5px;
+    font-size: 15px;
     color: white;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    margin-top: 10px;
+    margin-top: 0px;
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: #418ee0c4;
 }
 
-/* Optional: Add animation on form load */
 @keyframes fadeIn {
     0% {
         opacity: 0;
@@ -97,4 +122,21 @@ button:hover {
 
 form {
     animation: fadeIn 1s ease-in-out;
+}
+
+.upload-icon {
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    background: url('your-icon.png') no-repeat center center;
+    background-size: cover;
+}
+
+.upload-icon-container {
+    position: relative;
+    display: inline-block;
+}
+
+.upload-input {
+    display: none;
 }

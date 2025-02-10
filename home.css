@@ -1,0 +1,181 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    /* padding: 20px; */
+}
+
+
+#mainContent {
+    max-width: 900px;
+     margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+
+.mainNav {
+    /* display: flex;
+    justify-content: space-between;
+    align-items: center; */
+    padding: 20px;
+    background-color: #1a73e8;
+    color: white;
+    border-radius: 8px;
+}
+
+.mainNav .logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+#username {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+ul li {
+    margin-left: 25px;
+}
+
+ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+ul li a:hover {
+    color: #ffb84d;
+}
+.form-container {
+    margin-top: 30px;
+}
+
+h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+    font-weight: bold;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 15px;
+    display: block;
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    font-size: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+input[type="text"]:focus,
+textarea:focus {
+    outline: none;
+    border-color: #1a73e8;
+    background-color: #fff;
+}
+.btn {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background-color: #1a73e8;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 8px;
+}
+
+.btn:hover {
+    background-color: #1558b0;
+}
+.cards{
+    padding: 20px;
+}
+
+.fileUpload {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.file-input {
+    width: 80%;
+    padding: 12px;
+    font-size: 16px;
+    background-color: #f7f7f7;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.fileUpload button {
+    width: 18%;
+    background-color: #28a745;
+}
+
+.fileUpload button:hover {
+    background-color: #218838;
+}
+
+@media (max-width: 768px) {
+    #mainContent {
+        padding: 20px;
+    }
+
+    .fileUpload {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .file-input,
+    .fileUpload button {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+}
+.main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border: 1px solid #ddd;
+    width: 30%;
+}
