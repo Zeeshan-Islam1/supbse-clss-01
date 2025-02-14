@@ -3,23 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Welcome to Your Portal</title>
+    <link rel="shortcut icon" href="img/usericon.webp" type="image/x-icon">
     <link rel="stylesheet" href="home.css">
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 <body>
-    <!-- Main content container that holds different sections -->
     <div id="mainContent">
-        <!-- This is the main navigation and should be visible initially -->
         <div class="mainNav" id="mainNav">
             <nav>
                 <div class="logo" id="logo" style="align-items: center;">
                     <img src="img/17004.png" alt="" style="width: 50px; height: 50px; border-radius: 50%;">
                     <h2 id="username"></h2>
                 </div>
-                <ul>
-                    <li><a href="#" id="logoutBtn">logout</a></li>
-                    <li><a href="#" id="updateProfileBtn" onclick="window.location.href='password.html'">update profile</a></li>
+                <ul class="nav_btn">
+                    <li><a href="#" class="btn-2" id="logoutBtn">logout</a></li>
+                    <li><a href="#" class="btn-2" id="updateProfileBtn" onclick="window.location.href='password.html'">update profile</a></li>
                 </ul>
             </nav>
         </div>
@@ -45,6 +44,5 @@
 
 
     <script src="script.js" type="module"></script>
-    <script src="home.js" type="module"></script>
 </body>
 </html>
