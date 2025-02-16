@@ -7,13 +7,13 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #98AFC7;
+    background-color: #000000;
     color: #333;
 }
 #mainContent {
     max-width: 900px;
-     margin: 0 auto;
-    padding: 20px;
+     margin: 20px auto;
+    padding: 25px;
     background-color: white;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
@@ -24,7 +24,7 @@ nav{
 
 
 .mainNav {
-    background-color: #1a73e8;
+    background-color: #000000;
     color: white;
     border-radius: 10px;
     margin-bottom: 20px;
@@ -33,6 +33,7 @@ nav{
 .mainNav .logo {
     display: flex;
     align-items: center;
+    gap: 10px;
 }
 
 .logo-img {
@@ -58,7 +59,7 @@ ul li {
 }
 
 ul li a {
-    color: white;
+    color: rgb(0, 0, 0);
     text-decoration: none;
     font-size: 16px;
     transition: all 0.3s ease 0s;
@@ -66,8 +67,9 @@ ul li a {
 }
 
 ul li a:hover {
-    background-color: white;
-    color: black;
+    border: 1px solid #ffffff;
+    background-color: transparent !important;;
+    color: rgb(255, 255, 255);
     transition: 0.3s;
     box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.164);
 }
@@ -272,7 +274,7 @@ input#file:focus {
 }
 
 .nav_btn li a{
-    background-color: #007BFF;
+    background-color: #ffffff;
     padding: 10px 30px;
     border-radius: 10px;
 }
@@ -285,3 +287,42 @@ input#file:focus {
     color: white;
     border-radius: 8px;
 }
+@media screen and (max-width: 768px) {
+    .card {
+      padding: 15px;
+      margin: 5px;
+    }
+  
+    .card h2 {
+      font-size: 1.3rem;
+    }
+  
+    .card p {
+      font-size: 0.9rem;
+    }
+  
+    .card .btn1 {
+      padding: 8px 16px;
+      font-size: 0.9rem;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .card {
+      padding: 10px;
+      margin: 5px;
+    }
+  
+    .card h2 {
+      font-size: 1.1rem;
+    }
+  
+    .card p {
+      font-size: 0.8rem;
+    }
+  
+    .card .btn1 {
+      padding: 6px 12px;
+      font-size: 0.8rem;
+    }
+  }
